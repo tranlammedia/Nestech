@@ -1,0 +1,60 @@
+Entropy
+
+
+Entropy thông tin là mức độ thông tin mà tín hiệu mang lại
+
+
+Công thức:
+
+
+Entropy= -(tần suất * logarit của tần suất đó)
+
+
+đầu tiên : Tính entropy tổg ( tức là tính entropy của kết quả (label))
+
+Entropy(S-Label)=-(4/8)*log2(4/8)-4/8log2(4/8)= 1
+
+
+Tính 1 giá trị khác nó gọi là Average Entropy:
+AE(Mây)=4/8(Entropy(Sv-Không Mưa)) + 4/8(Entropy(Sv-Mưa))
+       =4/8(-3/4log2(3/4)-1/4log2(1/4)+ 4/8(-4/4log2(4/4)-0/4log2(0/4))=
+
+       =4/8(-3/4log2(3/4)-1/4log2(1/4)+ 4/8(-4/4log2(4/4))
+       =0.4056
+
+
+
+
+AE(Áp suất) = 4/8(Entropy(Sv-không mưa))        + 4/8(Entropy(Sv-mua))
+
+        = 4/8(2 cao + 2 thấp)                   + 4/8(2cao + 1tb +1 thấp)
+
+        = 4/8(-[2/4*log2(2/4) + 2/4*log2(2/4)]) + 4/8(-[2/4*log2(2/4)+1/4*log2(1/4)+1/4*log2(1/4)])
+        
+        = 1.25
+AE(Gió) = 4/8(Entropy(Sv-không mưa))            + 4/8(Entropy(Sv-mua))
+
+        = 4/8(2 bắc + 2 nam)                    + 4/8(3 bắc + 1nam)
+
+        = 4/8(-[2/4*log2(2/4) + 2/4*log2(2/4)]) + 4/8(-[3/4*log2(3/4)+1/4*log2(1/4)])
+        
+        = 0.9056
+
+
+Gini ở đây nó đem lại cái kết quả là việc thông tin của tín hiệu đó có bị nhiễu hay ko
+Entropy nó mang lại chỉ số đó là thông tin mà tín hiệu đó mang lại có chính xác ko:
+
+
+-->>>>> ngược nhau
+
+
+Tính tới cái chỉ số thông tin mang lại của từng cái thuộc tính:
+
+Gain(Mây)=1-AE(Mây)=1-0,4056= 
+Gain(Áp suất)=1-1,25=
+Gain(Gió)=1-0.9056=
+===> Cây lập cây quyết định dựa vào việc tính Gain và lấy Gain cao nhất
+
+
+
+

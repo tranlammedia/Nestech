@@ -1,0 +1,32 @@
+- Ôn lại Gini
+- Kiến thức mới Entropy
+ Định nghĩa/ thuật toán xây dựng quyết định bằng hàm Entropy
+(tự code thuật toán tính  Entropy)
+ Thử so sánh Thuật toán Ginu và Entropy trong việc xây dựng cây quyết định
+
+
+- Vậy thực tế người ta dùng thuật toán nào nhiều
+hơn?
+
+-Căn cứ nào mà ngta dùng cái đó ?
+- Làm sao so sánh cái nào hiệu quả 
+
+
+Nội dung buổi t3 tuần sau: THuật toán xây dựng cây quyết thứ 3 : ID3
+
+ 
+Bài tập ứng dụng cho các bạn
+
+
+Mỗi bạn xây dưng 1 trang web: mà ở đó nó có chức năng là training dữ liệu và đưa ra quyết định 
+phân biệt người bị Covid hay không dựa trên các đặc trưng (Data ban đầu) : Tự xây dựng 
+
+
+Yêu cầu code (Web : Chức năng upload file)---> data ban đầu
+Sau khi phân biệt người bị covid
+--> cho ra biểu đồ 
+
+
+Cách nhúng (Backed) __ Đọc file -> training ở Server -> kết quả -> Output -> biểu đồ 
+
+Socket --> python 

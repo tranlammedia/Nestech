@@ -1,0 +1,18 @@
+
+Auth
+https://www.facebook.com/v15.0/dialog/oauth?client_id=...&redirect_uri=https://example.com/&auth_type=rerequest&scope=public_profile
+
+token ca nhan
+https://graph.facebook.com/v15.0/oauth/access_token?redirect_uri=https://example.com/&code=...&client_id=...&client_secret=...
+
+get info ca nhan
+https://graph.facebook.com/me?fields=id,name,gender,posts&access_token=...
+
+token page (all)
+https://graph.facebook.com/me/accounts?access_token=...
+
+token 1 page (thay 134901810635976)
+https://graph.facebook.com/134901810635976?fields=access_token&access_token=...
+
+post 1 bai len page 
+https://graph.facebook.com/me/feed?message=...&access_token=...&link=...
